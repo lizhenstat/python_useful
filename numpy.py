@@ -17,3 +17,13 @@ foo = ['a', 'b', 'c', 'd', 'e']
 random.choice(foo)
 # random select several(non-overlap)
 random.sample(foo, 3)
+
+# python args and kwargs
+def myfunc(a,b, *args, **kwargs):
+   for ar in args:
+      print(ar)
+   for ar in kwargs:
+       print(ar)
+myfunc(1,2,3,4,e='hi',f='we')
+
+
